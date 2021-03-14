@@ -1,4 +1,4 @@
-# Aplicacion Slim PHP con despliegue en Heroku
+# Aplicación Slim PHP con despliegue en Heroku
 
 ## Despligue
 
