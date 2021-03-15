@@ -39,3 +39,10 @@ Lo utlimo que deberiamos hacer es clic en el botón **Deploy Branch**. Esto solo
 Podemos verificar desde GitHub si el depliegue se hizo con exito.
 
 ![Heroku6](https://i.ibb.co/K95j3fp/heroku6.png)
+
+Desde el botón **View deployment** accedemos a la URL de la app desplegada.
+
+https://slim-php-heroku.herokuapp.com/
+
+
+2021 - UTN FRA
