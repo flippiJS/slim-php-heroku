@@ -8,7 +8,14 @@ El principal objetivo de este repo es poder desplegar de forma automática nuest
 Como primer paso, forkeamos este proyecto desde el boton ubicado en la parte superior derecha de la pagina del repositorio.
 
 ## 2- Subimos nuestro codigo
-Una vez forkeado, clonamos el repo con `git clone <url del repo>` y agregamos nuestro codigo PHP (SLIM Framework) dentro de la carpeta `/app/`
+Una vez forkeado, clonamos el repo con `git clone <url del repo>` y agregamos nuestro codigo PHP (SLIM Framework) dentro de la carpeta `/app/`.
+Luego comiteamos y pusheamos los cambios.
+
+```sh
+git add .
+git commit -m "first commit"
+git push -u origin main
+```
 
 ## 3- Crear y configurar la App en Heroku
 
