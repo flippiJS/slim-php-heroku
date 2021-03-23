@@ -1,5 +1,4 @@
 <?php
-require_once '../controllers/LogController.php';
 
 class Logger
 {
