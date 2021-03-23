@@ -11,7 +11,7 @@ $app = new \Slim\App([]);
 
 
 $app->get('[/]', function (Request $request, Response $response) {    
-    $response->getBody()->write("GET => Bienvenido!!! ,a SlimFramework env->". getenv("MYSQL_PORT"));
+    $response->getBody()->write("GET => Bienvenido!!! ,a SlimFramework env->". getenv("MYSQL_HOST"));
     return $response;
 
 });
