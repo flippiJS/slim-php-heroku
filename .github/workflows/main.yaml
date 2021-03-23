@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: migrate secret to env
-      run: echo "${{ secrets.MYSQL_DB }}"
+      run: echo ${{ secrets.MYSQL_HOST }} | base64 -d > .env.production
       env: # As an environment variable
         MYSQL_DB: "hola"
         MYSQL_HOST: ${{ secrets.MYSQL_HOST }}
