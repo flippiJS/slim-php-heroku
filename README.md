@@ -54,7 +54,7 @@ https://slim-php-heroku.herokuapp.com/
 ## Requisitos para correr localmente
 
 - Instalar PHP o XAMPP (https://www.php.net/downloads.php o https://www.apachefriends.org/es/download.html)
-- Instalar Composer desde https//getcomposer.org/download/ o por medio de CLI:
+- Instalar Composer desde https://getcomposer.org/download/ o por medio de CLI:
 
 ```sh
 php -r "copy('//getcomposer.org/installer', 'composer-setup.php');"
@@ -73,6 +73,7 @@ cd C:\xampp\htdocs\
 composer require slim/slim "^3.0"
 ```
 
-- Abrir desde http:/localhost:8080/
+- Abrir desde http://localhost:8080/
+
 
 ### 2021 - UTN FRA
