@@ -1,9 +1,9 @@
 name: ENV
 on:
   push:
-    branches: [ master ]
+    branches: [ database ]
   pull_request:
-    branches: [ master ]
+    branches: [ database ]
 jobs:
   one:
     runs-on: ubuntu-latest
