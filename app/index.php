@@ -18,18 +18,17 @@ $config['addContentLengthHeader'] = false;
 
 $app = new \Slim\App(["settings" => $config]);
 
+// Usuarios
+$app->group('/usuarios', function () {
+    $this->get('[/]', \UsuarioController::class . ':TraerTodos');
+    $this->get('/{usuario}', \UsuarioController::class . ':TraerUno');
+    $this->post('[/]', \UsuarioController::class . ':CargarUno');
+  })->add(\Logger::class . ':LogOperacion');
 
 $app->get('[/]', function (Request $request, Response $response) {    
     $response->getBody()->write("GET => Bienvenido!!! a SlimFramework");
     return $response;
 
 });
-
-// Usuarios
-$app->group('/usuarios', function () {
-    $this->get('/{usuario}', \UsuarioController::class . ':TraerUno');
-    $this->post('[/]', \UsuarioController::class . ':CargarUno');
-  })->add(\Logger::class . ':LogOperacion');
-
 
 $app->run();
