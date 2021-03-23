@@ -27,4 +27,10 @@ class UsuarioController extends Usuario
         $respuesta = $response->withJson($usuario, 200);
         return $respuesta;
     }
+
+    public function TraerTodos($request, $response, $args)
+    {
+        $lista = Usuario::obtenerTodos();
+        return $response->withJson(array("listaUsuario" => $lista));
+    }
 }
