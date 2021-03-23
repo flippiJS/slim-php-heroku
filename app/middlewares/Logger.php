@@ -1,6 +1,5 @@
 <?php
-require_once './controllers/LogController.php';
-require_once 'AutentificadorJWT.php';
+require_once '../controllers/LogController.php';
 
 class Logger
 {
