@@ -43,7 +43,9 @@ Lo utlimo que deberiamos hacer es clic en el botón **Deploy Branch**. Esto solo
 
 ![Heroku5](https://i.ibb.co/sVYwVZx/heroku5.png)
 
-Podemos verificar desde GitHub si el depliegue se hizo con exito.
+Podemos verificar desde GitHub si el depliegue se hizo con exito. 
+
+https://github.com/flippiJS/slim-php-heroku/deployments
 
 ![Heroku6](https://i.ibb.co/K95j3fp/heroku6.png)
 
