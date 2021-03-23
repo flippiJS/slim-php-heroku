@@ -13,11 +13,12 @@ require_once './db/AccesoDatos.php';
 
 require_once './controllers/UsuarioController.php';
 
-
+// Instantiate App
 $app = AppFactory::create();
 
-$app->addRoutingMiddleware();
-$errorMiddleware = $app->addErrorMiddleware(true, true, true);
+// Add error middleware
+$app->addErrorMiddleware(true, true, true);
+
 
 // Usuarios
 $app->group('/usuarios', function () {
