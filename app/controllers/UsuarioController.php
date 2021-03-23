@@ -31,6 +31,10 @@ class UsuarioController extends Usuario
     public function TraerTodos($request, $response, $args)
     {
         $lista = Usuario::obtenerTodos();
-        return $response->withJson(array("listaUsuario" => $lista));
+        $payload = json_encode(array("listaUsuario" => $lista));
+
+        $response->getBody()->write($payload);
+        return $response
+          ->withHeader('Content-Type', 'application/json');
     }
 }
