@@ -8,7 +8,7 @@ use \Psr\Http\Message\ResponseInterface as Response;
 require_once '../vendor/autoload.php';
 
 require_once './db/AccesoDatos.php';
-require_once './middlewares/Logger.php';
+// require_once './middlewares/Logger.php';
 
 require_once './controllers/UsuarioController.php';
 
@@ -23,7 +23,7 @@ $app->group('/usuarios', function () {
     $this->get('[/]', \UsuarioController::class . ':TraerTodos');
     $this->get('/{usuario}', \UsuarioController::class . ':TraerUno');
     $this->post('[/]', \UsuarioController::class . ':CargarUno');
-  })->add(\Logger::class . ':LogOperacion');
+  });
 
 $app->get('[/]', function (Request $request, Response $response) {    
     $response->getBody()->write("GET => Bienvenido!!! a SlimFramework");
