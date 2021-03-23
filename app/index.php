@@ -5,6 +5,7 @@ ini_set('display_errors', 1);
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
+use Slim\Routing\RouteCollectorProxy;
 
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -21,10 +22,10 @@ $app->addErrorMiddleware(true, true, true);
 
 
 // Usuarios
-$app->group('/usuarios', function () {
-    $this->get('[/]', \UsuarioController::class . ':TraerTodos');
-    $this->get('/{usuario}', \UsuarioController::class . ':TraerUno');
-    $this->post('[/]', \UsuarioController::class . ':CargarUno');
+$app->group('/usuarios', function (RouteCollectorProxy $group) {
+    $group->get('[/]', \UsuarioController::class . ':TraerTodos');
+    $group->get('/{usuario}', \UsuarioController::class . ':TraerUno');
+    $group->post('[/]', \UsuarioController::class . ':CargarUno');
   });
 
 $app->get('[/]', function (Request $request, Response $response) {    
