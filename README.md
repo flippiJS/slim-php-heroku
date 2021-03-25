@@ -63,6 +63,9 @@ php -r "copy('//getcomposer.org/installer', 'composer-setup.php');"
 php -r "if (hash_file('SHA384', 'composer-setup.php') === 'e115a8dc7871f15d853148a7fbac7da27d6c0030b848d9b3dc09e2a0388afed865e6a3d6b3c0fad45c48e2b5fc1196ae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 php composer-setup.php
 ```
+
+## Correr localmente via XAMPP
+
 - Copiar proyecto dentro de la carpeta htdocs
 
 ```sh
@@ -72,10 +75,24 @@ C:\xampp\htdocs\
 
 ```sh
 cd C:\xampp\htdocs\
-composer require slim/slim "^4.0"
+composer update
 ```
 
 - Abrir desde http://localhost:8080/
 
+## Correr localmente via PHP
+
+- Acceder por linea de comandos a la carpeta del proyecto y luego instalar Slim framework via Compose
+
+```sh
+cd C:\<ruta-del-repo-clonado>
+composer update
+php -S localhost:666 -t app
+```
+
+- Abrir desde http://localhost:666/
+
+## Ayuda
+Cualquier duda o consulta por el canal de slack
 
 ### 2021 - UTN FRA
