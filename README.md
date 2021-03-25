@@ -1,8 +1,8 @@
-Aplicación Slim Framework PHP con despliegue automático en Heroku.
+Aplicación Slim Framework 4 PHP con despliegue automático en Heroku.
 ==============================
 
 ## Introducción
-El principal objetivo de este repo es poder desplegar de forma automática nuestra aplicación PHP Slim Framework en Heroku.
+El principal objetivo de este repo es poder desplegar de forma automática nuestra aplicación PHP Slim Framework 4 en Heroku.
 
 ## 1- Forkear proyecto
 Como primer paso, forkeamos este proyecto desde el boton ubicado en la parte superior derecha de la pagina del repositorio.
@@ -72,7 +72,7 @@ C:\xampp\htdocs\
 
 ```sh
 cd C:\xampp\htdocs\
-composer require slim/slim "^3.0"
+composer require slim/slim "^4.0"
 ```
 
 - Abrir desde http://localhost:8080/
