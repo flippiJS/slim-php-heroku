@@ -74,11 +74,16 @@ C:\xampp\htdocs\
 - Acceder por linea de comandos a la carpeta del proyecto y luego instalar Slim framework via Compose
 
 ```sh
-cd C:\xampp\htdocs\
+cd C:\xampp\htdocs\<ruta-del-repo-clonado>
 composer update
 ```
+- En el archivo index.php agregar la siguiente linea debajo de `AppFactory::create();`
 
-- Abrir desde http://localhost:8080/
+```sh
+// Set base path
+$app->setBasePath('/app');
+```
+- Abrir desde http://localhost/app ó http://localhost:8080/app (depende del puerto configurado en el panel del XAMPP)
 
 ## Correr localmente via PHP
 
